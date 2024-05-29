@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Master Services</string>
+    <string name="registration">Регистрация</string>
+    <string name="email">Почта</string>
+    <string name="password">Пароль</string>
+    <string name="register">Регистрация</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="name">Имя</string>
+    <string name="login">Логин</string>
+    <string name="description">Описание</string>
+    <string name="ask_a_application">Вы хотите оставить заявку?</string>
+    <string name="price">Цена</string>
+    <string name="job">Работа</string>
+    <string name="master">Мастер</string>
+    <string name="yes">Да</string>
+    <string name="date">Дата</string>
+    <string name="save">Сохранить</string>
+</resources>

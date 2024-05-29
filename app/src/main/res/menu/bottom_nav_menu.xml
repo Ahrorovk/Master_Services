@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_service"
+        android:icon="@drawable/service"
+        android:title="Услуги" />
+    <item
+        android:id="@+id/nav_master"
+        android:icon="@drawable/master"
+        android:title="Мастера"/>
+
+    <item
+        android:id="@+id/nav_application"
+        android:icon="@drawable/application"
+
+        android:title="Заявки" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile"
+        android:title="Профиль" />
+</menu>

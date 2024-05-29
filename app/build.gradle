@@ -1,0 +1,65 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+}
+
+android {
+    namespace 'com.example.masterservices'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.masterservices"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    viewBinding {
+        enabled = true
+    }
+}
+ext {
+    appCompatVersion = '1.2.0'
+    constraintLayoutVersion = '2.0.2'
+    coreTestingVersion = '2.1.0'
+    lifecycleVersion = '2.2.0'
+    materialVersion = '1.2.1'
+    roomVersion = '2.2.5'
+}
+dependencies {
+
+    implementation libs.room.runtime
+    annotationProcessor libs.room.compiler
+    androidTestImplementation libs.room.testing
+
+    implementation libs.lifecycle.viewmodel
+    implementation libs.lifecycle.common.java8
+    implementation libs.lifecycle.livedata
+
+    implementation libs.recyclerview
+    implementation(libs.datastore.preferences)
+    implementation(libs.fragment)
+    implementation libs.navigation.ui
+    implementation libs.navigation.fragment
+    implementation libs.constraintlayout
+    implementation libs.material
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}
